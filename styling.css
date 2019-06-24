@@ -218,6 +218,7 @@
     padding: 20px;
     box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
     width: 33%;
+    height: 200px;
 }
 
 .work-card h2 {
@@ -264,6 +265,13 @@
 
 .all-work a {
     text-decoration: none;
+}
+
+.preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
 }
 
 /** Subscribe! **/
