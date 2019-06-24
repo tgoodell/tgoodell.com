@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tristan Goodell &mdash Front-end Developer and Web Designer</title>
+        <link rel="stylesheet" href="styling.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="https://tristangoodell.com">Home</a>
+                    <a href="https://blog.tgoodell.com">Blog</a>
+                    <a href="tags.html">Tags</a>
+                    <a href="https://tristangoodell.com/work.html">My Work</a>
+                    <a href="contact.html">Get In Touch</a>
+                    <a href="https://github.com/tgoodell">Github</a>
+                </div>
+            </div>
+            <div class="nav-logo">
+                <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+                <span>
+                    <a href="https://blog.tgoodell.com">
+                        <img src="logo.jpg" alt="blog-logo" class="top-logo"></img>
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <section class="top-section">
+            <h1>Front-end Developer & Web Designer</h1>
+            <p>I build responsive, beautiful websites!</p>
+            <img src="" id="mugshot">
+        </section>
+        <section id="intro">
+            <div class="intro-text">
+                <h1>Greetings, I am Tristan.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra facilisis sapien, quis pulvinar orci bibendum eu. Integer finibus ullamcorper convallis. Nunc lectus augue, hendrerit eu imperdiet sit amet, aliquet vitae mi. Integer vehicula sagittis erat vitae facilisis. Quisque gravida interdum volutpat. Suspendisse posuere, mauris posuere feugiat rutrum, massa orci convallis justo, eget consequat tellus erat ac sapien. Etiam non arcu nibh. </p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skill-card" style="border-right: 1px dotted #ccc;">
+                <h1>Front-end Development</h1>
+                <div class="separator">
+                    <span></span>
+                </div>
+                <h2>Languages</h2>
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>Javascript</p>
+                <br>
+                <h2>I Use</h2>
+                <p>Apache Virtual Hosts</p>
+                <p>Nginx</p>
+                <p>Cloudflare</p>
+                <p>Github</p>
+                <p>DigitalOcean</p>
+                <p>Let's Encrypt</p>
+                <p>Visual Studio Code</p>
+            </div>
+            <div class="skill-card" style="border-left: 1px dotted #ccc;">
+                <h1>Web Design</h1>
+                <div class="separator">
+                    <span></span>
+                </div>
+                <h2>CMS</h2>
+                <p>Wordpress</p>
+                <p>Ghost</p>
+                <br>
+                <br>
+                <h2>I Make</h2>
+                <p>Logos</p>
+                <p>Banners</p>
+                <p>Blog Thumbnails</p>
+                <p>Color Schemes</p>
+                <p>& More</p>
+            </div>
+        </section>
+        <section id="certs">
+            <h1>Certifications</h1>
+            <div class="separator">
+                <span></span>
+            </div>
+            <div id="cert-cards">
+                <div class="cert-card">
+                    <h2>The Google Fundamentals of Digital Marketing Certification</h2>
+                    <img src="marketing.jpg">
+                    <p><b>Skills:</b> How to Take a Business Online, SEO, Advertising, Social Media & Content Marketing, Analytics, & E-commerce</p>
+                </div>
+                <div class="cert-card">
+                    <h2>Responsive Web Design Developer Certification</h2>
+                    <img src="responsive.jpg">
+                    <p><b>Skills:</b> HTML5, CSS3, Visual Design, Accessibility, Responsive Web, CSS Flexbox, & CSS Grid</p>
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <h1>Work</h1>
+            <div class="separator">
+                <span></span>
+            </div>
+            <div id="w-cards">
+                <div class="work-card">
+                    <h2>tgoodell.com</h2>
+                    <p>My personal website built using HTML5, CSS3, and JS.</p>
+                    <btn class="launch"><a href="https://tgoodell.com">Launch</a></btn>
+                </div>
+                <div class="work-card">
+                    <h2>blog.tgoodell.com</h2>
+                    <p>My personal blog that runs on Ghost CMS. This is also a superb sample of both my writing and graphics.</p>
+                </div>
+                <div class="work-card">
+                    <h2>locs.tgoodell.com</h2>
+                    <p>A repository of spreadsheets. The site itself is constructed using HTML5 and CSS3 while the spreadsheets are created in LibreOffice Calc.</p>
+                </div>
+            </div>
+            <div id="w-cards">
+                <div class="work-card">
+                    <h2>analytics.sugaryweb.com</h2>
+                    <p>Self-hosted web analytics using Matomo. Matomo itself is built in PHP, JS, HTML, and CSS.</p>
+                </div>
+                <div class="work-card">
+                    <h2>tmail.com.de</h2>
+                    <p>Self-hosted email using Mail-in-a-Box. Mail-in-a-Box is built in Python, Shell, HTML5, and PHP.</p>
+                </div>
+                <div class="work-card">
+                    <h2>maumelletsa.org</h2>
+                    <p>The official website for the Maumelle Technology Student Association. The site runs on Wordpress for easy updates by the Maumelle TSA Staff.
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="subscribe" id="subscribe">
+                <h1 style="color: #fff;">Subscribe!</h1>
+                <div class="separator">
+                    <span></span>
+                </div>
+                <p>Stay in touch and get updates on my latest projects!</p>
+                <form method="post" action="https://blog.tgoodell.com/subscribe/" class="gh-signin">
+                    <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://blog.tgoodell.com/subscribe/"><input class="referrer" type="hidden" name="referrer" value="https://blog.tgoodell.com/">
+                    <div style="position:flex;flex-direction:row;">
+                        <div class="form-group">
+                            <input class="gh-input" type="email" name="email" placeholder="Your email address">
+                            <button class="" type="submit"><span>Subscribe</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <p>&copy 2019 <a href="https://tgoodell.com">Tristan Goodell</a></p>
+        </footer>
+    </body>
+</html>
