@@ -215,7 +215,6 @@
 
 .work-card {
     margin: 20px;
-    padding: 20px;
     box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
     width: 33%;
     height: 200px;
@@ -223,6 +222,13 @@
 
 .work-card h2 {
     text-align: center;
+    visibility: hidden;
+}
+
+.work-card:hover h2 {
+    visibility: visible;
+    background-color: #fff;
+    vertical-align: center;
 }
 
 .work-card a {
