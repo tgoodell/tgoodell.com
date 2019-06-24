@@ -228,7 +228,9 @@
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    margin-bottom: 0;
+    width: 5em;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .launch a {
