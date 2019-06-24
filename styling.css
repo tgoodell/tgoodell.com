@@ -108,6 +108,7 @@
     width: 200px;
     height: 200px;
     background-color: #073763;
+    border-radius: 10px;
 }
 
 /** Introduction/About **/
@@ -343,6 +344,17 @@ footer a:hover {
 
 /** Media Queries **/
 
+@media (max-width: 1669px) {
+    #certs {
+        text-align: center;
+    }
+
+    #cert-cards {
+        flex-direction: column;
+        margin: auto;
+    }
+}
+
 @media (max-width: 300px) {
     .intro-text {
         width: auto;
@@ -369,7 +381,9 @@ footer a:hover {
     }
 
     .skill-card {
-        margin: auto;
+        margin: 30px;
+        width: 100%;
+        border: none;
     }
 }
 
