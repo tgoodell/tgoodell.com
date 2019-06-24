@@ -238,6 +238,10 @@
     color: #fff;
 }
 
+.launch:hover {
+    background-color: #0c5395;
+}
+
 /** Subscribe! **/
 
 .subscribe {
