@@ -1,0 +1,370 @@
+/** General CSS **/
+
+@import url('https://fonts.googleapis.com/css?family=B612&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'B612', sans-serif;
+}
+
+/** Navigation Bar **/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    line-height: 30px;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+  
+.menu-button {
+    font-size:20px;
+    cursor:pointer;
+    float: right;
+    margin: 20px;
+    border-radius: 0px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    padding: 10px;
+    line-height: 20px;
+}
+  
+.menu-button:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+  
+.top-logo {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+  
+.nav-logo {
+    background-color: #073763;
+}
+
+/** Title/What I do **/
+
+.top-section {
+    text-align: center;
+    line-height: 50px;
+    padding: 100px;
+}
+
+.top-section h1 {
+    font-size: 30px;
+}
+
+.top-section p {
+    font-size: 25px;
+    font-weight: 10;
+}
+
+#mugshot {
+    width: 200px;
+    height: 200px;
+    background-color: #073763;
+}
+
+/** Introduction/About **/
+
+#intro {
+    background-color: #073763;
+    color: #fff;
+    padding: 100px;
+    padding-bottom: 200px;
+    line-height: 35px;
+}
+
+#intro h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.intro-text {
+    width: 50%;
+    margin: auto;
+}
+
+/** Skills **/
+
+#skills {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    margin-top: -100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.skill-card {
+    width: 50%;
+    text-align: center;
+}
+
+.skill-card h2 {
+    color: #073763;
+    font-size: 20px;
+}
+
+/** Certs **/
+
+#certs {
+    width: 60%;
+    margin: auto;
+    padding: 100px;
+    line-height: 40px;
+}
+
+#certs h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#cert-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cert-card {
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.cert-card h2 {
+    margin-bottom: 10px;
+}
+
+.cert-card img {
+    width: 100%;
+    align-self: vertical;
+}
+
+.cert-card p {
+    line-height: 30px;
+}
+
+.cert-card b {
+    color: #073763;
+}
+
+/** Work **/
+
+#work {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+#w-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-card {
+    margin: 20px;
+    padding: 20px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+    width: 33%;
+}
+
+.work-card h2 {
+    text-align: center;
+}
+
+.launch {
+    background-color: #073763;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.launch a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/** Subscribe! **/
+
+.subscribe {
+    background-color: #302949;
+    padding: 2%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.subscribe p {
+    color: #fff;
+}
+
+.subscribe button {
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #2b59c3;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #0b5394;
+}
+
+.gh-input {
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    width: 400px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #2b59c3;
+    font-size: 16px;
+}
+
+.separator {
+    background-color: #cccccc;
+    width: 180px;
+    height: 1px;
+    margin: 15px auto 21px;
+}
+
+.separator span {
+    background-color: #2b59c3;
+    width: 30px;
+    height: 4px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+    bottom: 2px;
+}
+
+/** Footer **/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #073763;
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ccc;
+    border-bottom: 1px solid #ffdd4a;
+}
+
+footer a:hover {
+    color: #fff;
+    border-bottom: 1px solid #ffe05a;
+}
+
+/** Media Queries **/
+
+@media (max-width: 300px) {
+    .intro-text {
+        width: auto;
+    }
+}
+
+@media (max-width: 973px) {
+    #skills {
+        margin: 1%;
+        margin-top: -100px;
+        width: auto;
+    }
+}
+
+@media (max-width: 1209px) {
+    .intro-text {
+        width: auto;
+    }
+}
+
+@media (max-width: 661px) {
+    #skills {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        margin: auto;
+    }
+}
+
+@media (max-width: 567px) {
+    #intro {
+        padding: 100px 50px 100px 50px;
+    }
+
+    #skills {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 465px) {
+    #intro {
+        padding: 40px 20px 40px 20px;
+    }
+    #skills {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 455px) {
+    .gh-input {
+        width: auto;
+    }
+}
