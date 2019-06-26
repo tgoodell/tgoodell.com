@@ -73,8 +73,9 @@
 }
   
 .menu-button:hover {
-    color: #ffffff;
+    color: #073763;
     border-color: #ffffff;
+    background-color: #fff;
 }
   
 .top-logo {
