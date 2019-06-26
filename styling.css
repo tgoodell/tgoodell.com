@@ -251,11 +251,6 @@
     border-bottom: 2px solid #e8c944;
 }
 
-@keyframes work-ani {
-    visibility: visible;
-    background-color: #073763;
-}
-
 .work-card a:hover {
     border-bottom: 2px solid #ffdd4a;
     color: #fff;
@@ -379,33 +374,78 @@ footer a:hover {
 
 /** Media Queries **/
 
+@media (max-width: 1815px) {
+    #work {
+        width: 70%;
+    }
+}
+
 @media (max-width: 1669px) {
     #certs {
         text-align: center;
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1493px) {
+    #work {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1285px) {
+    #work {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1209px) {
+    .intro-text {
+        width: auto;
+    }
+}
+
+@media (max-width: 1103px) {
+    #work {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1063px) {
+    #w-cards {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .work-card {
+        width: 80%;
+        height: 15em;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 973px) {
+    #skills {
+        margin: 10px;
+        margin-bottom: 20px;
+        margin-top: -100px;
+        width: auto;
+    }
+
+    #certs {
+        text-align: center;
+        width: 100%;
+        padding: 0;
     }
 
     #cert-cards {
         flex-direction: column;
         margin: auto;
     }
-}
 
-@media (max-width: 300px) {
-    .intro-text {
-        width: auto;
-    }
-}
-
-@media (max-width: 973px) {
-    #skills {
-        margin: 1%;
-        margin-top: -100px;
-        width: auto;
-    }
-}
-
-@media (max-width: 1209px) {
-    .intro-text {
+    .cert-card {
         width: auto;
     }
 }
@@ -443,6 +483,12 @@ footer a:hover {
 
 @media (max-width: 455px) {
     .gh-input {
+        width: auto;
+    }
+}
+
+@media (max-width: 300px) {
+    .intro-text {
         width: auto;
     }
 }
