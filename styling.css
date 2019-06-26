@@ -137,6 +137,17 @@
     margin: auto;
 }
 
+.intro-text p a {
+    text-decoration: none;
+    color: #ccc;
+    border-bottom: 1px solid #ffdd4a;
+}
+
+.intro-text p a:hover {
+    border-bottom: 1px solid #ffe05a;
+    color: #fff;
+}
+
 /** Skills **/
 
 #skills {
@@ -265,6 +276,11 @@
     color: #0c5395;
     font-size: 20px;
     padding: 10px;
+}
+
+.all-work:hover {
+    background-color: #0c5395;
+    color: #fff;
 }
 
 .all-work a {
