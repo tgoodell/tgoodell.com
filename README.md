@@ -34,4 +34,4 @@ Then, clone this github repo to create a new `public_html`:
 
 ## License
 
-GNU General Public License v3.0
+Copyright (C) 2019 Tristan Goodell
