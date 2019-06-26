@@ -108,7 +108,7 @@
     width: 200px;
     height: 200px;
     background-color: #073763;
-    border-radius: 10px;
+    border-radius: 100px;
 }
 
 /** Introduction/About **/
@@ -119,6 +119,7 @@
     padding: 100px;
     padding-bottom: 200px;
     line-height: 35px;
+    border-top: 5px solid #ffdd4a;
 }
 
 #intro h1 {
