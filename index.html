@@ -1,436 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
-<body>
-<head>
-<title>Tristan Goodell &mdash; Web Designer</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Tristan Goodell is an avid Web Designer who specializes in front-end technologies, such as HTML/CSS, Ghost, and 
-            Wordpress. Notably, he has earned Google's Fundamentals of Digital Marketing Certification in addition to freeCodeCamp's Responsive Web Design 
-            Certification. He has pursued projects utilizing Apache Virtual Hosts, Mail-in-a-Box's self-hosted email server, and Matomo's self-hosted analytics.">
-<meta name="og:title" property="og:title" content="Tristan Goodell &emdash; Web Designer">
-<meta property="og:type" content="website">
-<meta property="og:description" property="og:description" content="Tristan Goodell is a Web Designer who uses HTML/CSS and Wordpress among other
-            things.">
-<link href="URL" rel="canonical">
-<meta name="google-site-verification" content="gm1weg3SJV4RB03qD4t0IJwmIRamTXxy-V4We-XaFfc" />
-<meta name="msvalidate.01" content="0195410DF78E3630ACAFD6B61C045427" />
-
-<script type="69f549d93620a07cd2ebd39c-text/javascript">
-                var _paq = window._paq || [];
-                /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-                _paq.push(['trackPageView']);
-                _paq.push(['enableLinkTracking']);
-                (function() {
-                var u="https://analytics.sugaryweb.com/";
-                _paq.push(['setTrackerUrl', u+'matomo.php']);
-                _paq.push(['setSiteId', '7']);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-                })();
-            </script>
-
-<link rel="shortcut icon" href="favicons/favicon.ico">
-<link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico">
-<link rel="icon" type="image/png" sizes="196x196" href="favicons/favicon-192.png">
-<link rel="icon" type="image/png" sizes="160x160" href="favicons/favicon-160.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96.png">
-<link rel="icon" type="image/png" sizes="64x64" href="favicons/favicon-64.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16.png">
-<link rel="apple-touch-icon" href="favicons/favicon-57.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicons/favicon-114.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon-72.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicons/favicon-144.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon-60.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicons/favicon-120.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon-76.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicons/favicon-152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-180.png">
-<meta name="msapplication-TileColor" content="#FFFFFF">
-<meta name="msapplication-TileImage" content="favicons/favicon-144.png">
-<meta name="msapplication-config" content="favicons/browserconfig.xml">
-<style>
-                * {
-                    font-family: 'Raleway', sans-serif;
-                    box-sizing: border-box;
-                }
-
-                body {
-                    padding: 0;
-                    margin: 0;
-                }
-
-                header {
-                    font-size: 50px;
-                    display: flex;
-                    float: left;
-                }
-
-                .logo {
-                    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
-                    width: 70px;
-                }
-
-                .nav-link {
-                    margin: 10px;
-                    line-height: 30px;
-                    text-decoration: none;
-                    color: #0b5394;
-                    display: inline-block;
-                    border-bottom: solid 2px #0b5394;
-                }
-
-                .nav-link:hover {
-                    color: #073763;
-                    font-weight: 500;
-                    border-bottom: solid 2px #073763;
-                }
-
-                .top {
-                    text-align: center;
-                    background-color: #fff;
-                    margin: auto;
-                    display: flex;
-                }
-
-                .banner {
-                    height: 500px;
-                    width: 100%;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-image:url(banner.png);
-                    padding: 10px;
-                    border-bottom: 10px solid #302949;
-                    text-align: center;
-                    display: flex;
-                    background-color: #073763;
-
-                }
-
-                .banner h1 {
-                    color: #fff;
-                    margin: auto;
-                    font-size: 50px;
-                    border-bottom: 5px solid #fff;
-                }
-
-                nav {
-                    margin: 1%;
-                    border-radius: 5px;
-                    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
-                    width: 100%;
-                    margin-bottom: -10px;
-                    background-color: #fff;
-                    margin-top: 0;
-                }
-
-                .body-card {
-                    margin: 1%;
-                    padding: 1%;
-                    border-radius: 5px;
-                    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
-                    margin-top: -20px;
-                    background-color: #fff;
-                    text-align: center;
-                }
-
-                .body-card h1 {
-                    font-size: 40px;
-                }
-
-                .cool-footer {
-                    background-color: #073763;
-                    padding: 1%;
-                    color: #fff;
-                    text-align: center;
-                }
-
-                .card {
-                    background-color: #f9f9f9;
-                    padding: 1%;
-                    width: 31.33%;
-                    text-align: center;
-                    margin: 1%;
-                    border-top : 4px solid #e9e9e9;
-                    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
-                }
-
-                .card i {
-                    font-size: 50px;
-                    color: #073763;
-                }
-
-                .card h2 {
-                    font-weight: 700;
-                    border-bottom: 2px solid #2b59c3;  
-                }
-
-                .card:hover {
-                    border-top: 4px solid #2b59c3;
-                    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
-                }
-
-                .toolkit-cards {
-                    width: 60%;
-                    text-align: center;
-                    margin: auto;
-                    flex-direction: row;
-                    display: flex;
-                }
-
-                .separator {
-                    background-color: #cccccc;
-                    width: 180px;
-                    height: 1px;
-                    margin: 15px auto 21px;
-                }
-
-                .separator span {
-                    background-color: #2b59c3;
-                    width: 30px;
-                    height: 4px;
-                    margin: 0px auto;
-                    display: block;
-                    position: relative;
-                    bottom: 2px;
-                }
-
-                .certifications {
-                    background-color: #fff;
-                    padding: 1%;
-                }
-
-                .cert-cards {
-                    width: 60%;
-                    text-align: center;
-                    margin: auto;
-                    flex-direction: row;
-                    display: flex;
-                    margin: auto;
-                }
-
-                .cert-card:hover {
-                    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
-                    border-top: 4px solid #2b59c3;
-                }
-
-                .cert-card {
-                    background-color: #f9f9f9;
-                    border-top : 4px solid #e9e9e9;
-                    width: 48%;
-                    margin: 1%;
-                    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .cert-img {
-                    width: 98%;
-                    margin: auto 1%;
-                }
-
-                @media (max-width: 686px) {
-                    .cert-cards {
-                        width: auto;
-                        flex-direction: column;
-                    }
-                    .toolkit-cards {
-                        flex-direction: column;
-                        width: auto;
-                    }
-                }
-
-                .skills {
-                    background-color: #f9f9f9;
-                    margin: -1%;
-                    padding: 1%;
-                    margin-top: 1%;
-                    margin-bottom: 1%;
-                }
-
-                .about-p {
-                    width: 50%;
-                    margin: auto;
-                    text-align: left;
-                    font-size: 20px;
-                }
-
-                .subscribe {
-                    background-color: #302949;
-                    margin: -1%;
-                    padding: 2%;
-                }
-
-                .subscribe button {
-                    padding: 10px 20px 10px 20px;
-                    margin: 5px;
-                    font-size: 16px;
-                    background-color: #2b59c3;
-                    font-weight: 400;
-                    padding-left: 50px;
-                    padding-right: 50px;
-                    color: #fff;
-                    border: none;
-                    cursor: pointer;
-                }
-
-                .subscribe button:hover {
-                    background-color: #0b5394;
-                }
-
-                .gh-input {
-                    padding: 10px 20px 10px 20px;
-                    margin: 5px;
-                    width: 400px;
-                    color: #fff;
-                    background-color: transparent;
-                    border: 1px solid #2b59c3;
-                    font-size: 16px;
-                }
-
-                @media (max-width: 455px) {
-                    .gh-input {
-                        width: auto;
-                    }
-                }
-
-                @media (max-width: 1078px) {
-                    .cert-cards {
-                        width: auto;
-                    }
-                    .cert-card {
-                        width: auto;
-                    }
-                    .toolkit-cards {
-                        width: auto;
-                    }
-                    .card {
-                        width: auto;
-                    }
-                    .about-p {
-                        width: auto;
-                    }
-                }
-
-                .cool-footer a {
-                    color: #fff;
-                    text-decoration: none;
-                    border-bottom: 1px solid #ffdd4a;
-                }
-            </style>
-</head>
-<noscript>
-            <!-- Matomo Image Tracker-->
-            <img src="https://analytics.sugaryweb.com/matomo.php?idsite=7&amp;rec=1" style="border:0" alt="" />
-            <!-- End Matomo -->
-        </noscript>
-<main class="main-body">
-<div style="text-align:center;margin: 1%;"><a href="https://tgoodell.com"><img alt="Tristan Goodell Logo" src="logo.jpg" style="background-color: #073763; width: 70px;height: 70px;" class="logo"></a></div>
-<section class="top">
-<nav>
-<a href="https://blog.tgoodell.com/#main-body" class="nav-link">Blog</a>
-<a href="#about" class="nav-link">About</a>
-<a href="#skills" class="nav-link">Skills</a>
-<a href="#certifications" class="nav-link">Certifications</a>
-<a href="https://portfolio.tgoodell.com" class="nav-link">Portfolio</a>
-<a href="https://blog.tgoodell.com/contact/" class="nav-link">Contact</a>
-</nav>
-</section>
-<section>
-<div class="banner">
-<h1>Tristan Goodell</h1>
-</div>
-</section>
-<section class="body-card">
-<h1 class="about" id="about">About</h1>
-<div class="separator">
-<span></span>
-</div>
-<p class="about-p">Hello! My name is Tristan Goodell. I am an aspiring Web Designer based in the United States. I was introduced to CSS when I managed several Subreddits
-back in 2015. This experience jump-started my journey to learn Web Design. Ever since, I have been attempting to better myself and hone my skills. At
-first, this mainly involved coding websites for an intranet. This later morphed into live websites on the Internet.
-</p>
-<br>
-<p class="about-p">Today, I manage a handful of websites for both myself and others. Some of these sites were built from the ground up while others
-were constructed using Content Management Systems, such as Ghost and Wordpress.
-</p>
-<div class="skills" id="skills">
-<h1>Skills</h1>
-<div class="separator">
-<span></span>
-</div>
-<div class="toolkit-cards">
-<div class="card">
-<i class="fa fa-html5"></i>
-<h2>HTML</h2>
-<p>4 Years</p>
-</div>
-<div class="card">
-<i class="fa fa-css3"></i>
-<h2>CSS</h2>
-<p>4 Years</p>
-</div>
-<div class="card">
-<i class="fa fa-wordpress"></i>
-<h2>Wordpress</h2>
-<p>3 Years</p>
-</div>
-</div>
-<div class="toolkit-cards">
-<div class="card">
-<i class="fa fa-magic"></i>
-<h2>Graphic Design</h2>
-<p>3 Years</p>
-</div>
-<div class="card">
-<i class=" fa fa-search"></i>
-<h2>SEO</h2>
-<p>2 Years</p>
-</div>
-<div class="card">
-<i class="fa fa-server"></i>
-<h2>Sysadmin</h2>
-<p>2 Years</p>
-</div>
-</div>
-</div>
-<div class="certifications" id=certifications>
-<h1>Certifications</h1>
-<div class="separator">
- <span></span>
-</div>
-<div class="cert-cards">
-<div class="cert-card">
-<h2>The Google Fundamentals of Digital Marketing Certification</h2>
-<img src="marketing.jpg" class="cert-img" alt="The Google Fundamentals of Digital Marketing Certification">
-</div>
-<div class="cert-card">
-<h2>Responsive Web Design Developer Certification</h2>
-<img src="responsive.jpg" class="cert-img" alt="The freeCodeCamp Responsive Web Design Certification">
-</div>
-</div>
-</div>
-<div class="subscribe" id="subscribe">
-<h1 style="color: #fff;">Subscribe</h1>
-<div class="separator">
-<span></span>
-</div>
-<form method="post" action="https://blog.tgoodell.com/subscribe/" class="gh-signin">
-<input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://blog.tgoodell.com/subscribe/"><input class="referrer" type="hidden" name="referrer" value="https://blog.tgoodell.com/">
-<div style="position:flex;flex-direction:row;">
-<div class="form-group">
-<input class="gh-input" type="email" name="email" placeholder="Your email address">
-<button class="" type="submit"><span>Subscribe</span></button>
-</div>
-</div>
-</form>
-</div>
-</section>
-<footer class="cool-footer">
-&copy <a href="https://tgoodell.com/">Tristan Goodell</a> 2019
-</footer>
-</main>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/a2bd7673/cloudflare-static/rocket-loader.min.js" data-cf-settings="69f549d93620a07cd2ebd39c-|49" defer=""></script></body>
+<html>
+    <head>
+        <title>Tristan Goodell &mdash; Front-end Developer and Web Designer</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Tristan Goodell is a Front-end Developer and Web Designer who uses technologies like HTML5, CSS3, Javascript, Wordpress, 
+        and Ghost to build responsive and beautiful websites. He has earned The Google Fundamentals of Digital Marketing Certification and The Responsive Web 
+        Design Developer Certification. Also, he has a multitude of projects under his belt.">
+        <meta name="og:title" property="og:title" content="Tristan Goodell &emdash; Front-end Developer & Web Designer">
+        <meta property="og:type" content="website">
+        <meta property="og:description" property="og:description" content="Tristan Goodell is Front-end Developer and Web Designer.">
+        <meta property="og:image" content="images/tgoodell.com.png">
+        <link href="URL" rel="canonical"> 
+        <meta name="author" content="Tristan Goodell">
+        <meta name="keywords" content="Tristan Goodell, Tristan, Goodell, tgoodell, Front-end Developer, Web Designer, HTML, CSS, Javascript, Wordpress, Ghost, Apache Virtual Hosts, xkill, Email">
+        <meta charset="UTF-8">
+        <meta name="google-site-verification" content="gm1weg3SJV4RB03qD4t0IJwmIRamTXxy-V4We-XaFfc" />
+        <meta name="msvalidate.01" content="0195410DF78E3630ACAFD6B61C045427" />
+        <!-- Matomo -->
+        <script type="text/javascript">
+            var _paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="https://analytics.sugaryweb.com/";
+            _paq.push(['setTrackerUrl', u+'matomo.php']);
+            _paq.push(['setSiteId', '7']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+        <!-- End Matomo Code -->
+        <link rel="shortcut icon" href="favicons/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="favicons/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="favicons/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="favicons/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16.png">
+        <link rel="apple-touch-icon" href="favicons/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicons/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicons/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicons/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicons/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicons/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicons/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicons/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="favicons/favicon-144.png">
+        <meta name="msapplication-config" content="favicons/browserconfig.xml">
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="https://tngoodell.com">Home</a>
+                    <a href="https://blog.tgoodell.com">Blog</a>
+                    <a href="https://blog.tgoodell.com/tags/">Tags</a>
+                    <a href="https://blog.tgoodell.com/work/">My Work</a>
+                    <a href="https://blog.tgoodell.com/contact/">Get In Touch</a>
+                    <a href="https://github.com/tgoodell">Github</a>
+                </div>
+            </div>
+            <div class="nav-logo">
+                <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+                <span>
+                    <a href="https://blog.tgoodell.com">
+                        <img src="images/logo.jpg" alt=" Tristan Goodell Logo" class="top-logo"></img>
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <section class="top-section">
+            <h1>Front-end Developer & Web Designer</h1>
+            <p>I build responsive, beautiful websites!</p>
+            <img src="images/mugshot.jpg" id="mugshot" alt="Tristan Goodell">
+        </section>
+        <section id="intro">
+            <div class="intro-text">
+                <h1>Hello, I am Tristan!</h1>
+                <div class="separator">
+                    <span></span>
+                </div>
+                <p>I am a front-end developer and web designer based in the United States. I was first introduced to CSS3 while managing several subreddits 
+                    prior to Reddit's redesign. I also created banners, logos, and other graphics to enhance the design of the subreddits under my jurisdiction. 
+                    This later morphed into building websites from the group up by using front-end technologies, such as HTML5 and CSS3. At first, these sites were 
+                    solely for local intranets. Later, I began building websites for the greater web.
+                </p>
+                <br>
+                <p>Today, I build and design websites using a variety of languages, technologies, and techniques (a few are shown below). I have constructed 
+                    websites for a variety of people and institutions including, but not limited to, friends, school clubs, and myself.
+                </p>
+                <br>
+                <p>If you were captivated by what you have seen, feel free to <a href="https://blog.tgoodell.com/contact/">reach out to me</a>.
+            </div>
+        </section>
+        <section id="skills">
+            <div class="skill-card" style="margin:0;margin-top: 40px;margin-bottom: 40px;">
+                <h1>Front-end Development</h1>
+                <div class="separator">
+                    <span></span>
+                </div>
+                <h2>Languages</h2>
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>Javascript</p>
+                <br>
+                <h2>I Use</h2>
+                <p>Apache Virtual Hosts</p>
+                <p>Nginx</p>
+                <p>Cloudflare</p>
+                <p>Github</p>
+                <p>DigitalOcean</p>
+                <p>Let's Encrypt</p>
+                <p>Visual Studio Code</p>
+            </div>
+            <div class="skill-card" style="margin: 0;margin-top:40px;margin-bottom: 40px;">
+                <h1>Web Design</h1>
+                <div class="separator">
+                    <span></span>
+                </div>
+                <h2>CMS</h2>
+                <p>Wordpress</p>
+                <p>Ghost</p>
+                <br>
+                <br>
+                <h2>I Make</h2>
+                <p>Logos</p>
+                <p>Banners</p>
+                <p>Blog Thumbnails</p>
+                <p>Color Schemes</p>
+                <p>& More</p>
+            </div>
+        </section>
+        <section id="certs">
+            <h1>Certifications</h1>
+            <div class="separator">
+                <span></span>
+            </div>
+            <div id="cert-cards">
+                <div class="cert-card">
+                    <h2>The Google Fundamentals of Digital Marketing Certification</h2>
+                    <img src="images/marketing.jpg" alt="The Google Fundamentals of Digital Marketing Certification">
+                    <p><b>Skills:</b> How to Take a Business Online, SEO, Advertising, Social Media & Content Marketing, Analytics, & E-commerce</p>
+                </div>
+                <div class="cert-card">
+                    <h2>Responsive Web Design Developer Certification</h2>
+                    <img src="images/responsive.jpg" alt="Responsive Web Design Certification">
+                    <p><b>Skills:</b> HTML5, CSS3, Visual Design, Accessibility, Responsive Web, CSS Flexbox, & CSS Grid</p>
+                </div>
+            </div>
+        </section>
+        <section id="work">
+            <h1>Work</h1>
+            <div class="separator">
+                <span></span>
+            </div>
+            <div id="w-cards">
+                <div class="work-card" style="background-image: url(images/tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <h2><a href="https://tgoodell.com">tgoodell.com</a></h2>
+                </div>
+                <div class="work-card" style="background-image: url(images/blog.tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <h2><a href="https://blog.tgoodell.com">blog.tgoodell.com</a></h2>
+                </div>
+                <div class="work-card" style="background-image: url(images/locs.tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <h2><a href="https://locs.tgoodell.com">locs.tgoodell.com</a></h2>
+                </div>
+            </div>
+            <div id="w-cards">
+                <div class="work-card" style="background-image: url(images/analytics.sugaryweb.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <h2><a href="https://analytics.sugaryweb.com">analytics.sugaryweb.com</a></h2>
+                </div>
+                <div class="work-card" style="background-image: url(images/blog.tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <h2><a href="https://tmail.com.de">tmail.com.de</a></h2>
+                </div>
+                <div class="work-card" style="background-image: url(images/maumelletsa.org.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                    <h2><a href="maumelletsa.org">maumelletsa.org</a></h2>
+                </div>
+            </div>
+            <div style="margin-top: 40px;margin-bottom: 40px;"><a href="https://blog.tgoodell.com/work/" class="all-work" >All Work</a></div>
+        </section>
+        <section>
+            <div class="subscribe" id="subscribe">
+                <h1 style="color: #fff;">Subscribe!</h1>
+                <div class="separator">
+                    <span></span>
+                </div>
+                <p>Stay in touch and get updates on my latest projects!</p>
+                <form method="post" action="https://blog.tgoodell.com/subscribe/" class="gh-signin">
+                    <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://blog.tgoodell.com/subscribe/"><input class="referrer" type="hidden" name="referrer" value="https://blog.tgoodell.com/">
+                    <div style="position:flex;flex-direction:row;">
+                        <div class="form-group">
+                            <input class="gh-input" type="email" name="email" placeholder="Your email address">
+                            <button class="" type="submit"><span>Subscribe</span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="secondary-footer">
+                2nd
+            </div>
+            <div class="primary-footer">
+                <p>&copy 2019 <a href="https://tgoodell.com">Tristan Goodell</a></p>
+            </div>
+        </footer>
+    </body>
 </html>
