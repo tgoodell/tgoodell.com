@@ -236,23 +236,29 @@
 }
 
 .work-card:hover {
-    border-radius: 50px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+    animation-duration: 1s;
 }
 
 .work-card:hover h2 {
     visibility: visible;
-    background-color: #fff;
     background-color: #073763;
 }
 
 .work-card a {
     text-decoration: none;
-    color: #000;
-    border-bottom: 2px solid #073763;
+    color: #ccc;
+    border-bottom: 2px solid #e8c944;
+}
+
+@keyframes work-ani {
+    visibility: visible;
+    background-color: #073763;
 }
 
 .work-card a:hover {
-    border-bottom: 2px solid #0c5395;
+    border-bottom: 2px solid #ffdd4a;
+    color: #fff;
 }
 
 .launch {
