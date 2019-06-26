@@ -383,7 +383,7 @@ Table of Contents
     color: #ccc;
 }
 
-footer a {
+.primary-footer a {
     text-decoration: none;
     color: #ccc;
     border-bottom: 1px solid #ffdd4a;
@@ -398,6 +398,16 @@ footer a:hover {
     background-color: #0c5395;
     color: #ccc;
     padding: 20px;
+}
+
+.socials {
+    margin: auto;
+    text-align: auto;
+}
+
+.social-icon {
+    width: 30px;
+    border-radius: 20px;
 }
 
 /** Media Queries **/
