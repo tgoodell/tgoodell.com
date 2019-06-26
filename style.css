@@ -1,3 +1,20 @@
+/** 
+
+Table of Contents
+
+1. General CSS
+2. Navigation Bar
+3. Title/What I do
+4. Introduction/About
+5. Skills
+6. Certs
+7. Work
+8. Subscribe!
+9. Footer
+10. Media Queries
+
+**/
+
 /** General CSS **/
 
 @import url('https://fonts.googleapis.com/css?family=B612&display=swap');
@@ -181,6 +198,7 @@
     margin: auto;
     padding: 100px;
     line-height: 40px;
+    margin-top: 70px;
 }
 
 #certs h1 {
@@ -224,6 +242,7 @@
     text-align: center;
     width: 60%;
     margin: auto;
+    margin-top: 70px;
 }
 
 #w-cards {
