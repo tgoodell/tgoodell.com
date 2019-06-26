@@ -24,6 +24,10 @@ Table of Contents
     font-family: 'B612', sans-serif;
 }
 
+a {
+    transition: 0.5s;
+}
+
 /** Navigation Bar **/
 
 .overlay {
@@ -33,8 +37,7 @@ Table of Contents
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(7,55,99, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -51,14 +54,14 @@ Table of Contents
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #818181;
+    color: #ccc;
     display: block;
     transition: 0.3s;
     line-height: 30px;
 }
   
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+    color: #fff;
 }
   
 .overlay .closebtn {
@@ -87,6 +90,7 @@ Table of Contents
     color: #ccc;
     padding: 10px;
     line-height: 20px;
+    transition: 0.5s;
 }
   
 .menu-button:hover {
@@ -267,11 +271,11 @@ Table of Contents
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
 }
 
 .work-card:hover {
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
-    animation-duration: 1s;
 }
 
 .work-card:hover h2 {
@@ -296,6 +300,7 @@ Table of Contents
     color: #0c5395;
     font-size: 20px;
     padding: 10px;
+    transition: 0.5s;
 }
 
 .all-work:hover {
@@ -342,6 +347,7 @@ Table of Contents
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .subscribe button:hover {
@@ -389,7 +395,7 @@ Table of Contents
     border-bottom: 1px solid #ffdd4a;
 }
 
-footer a:hover {
+.primary-footer a:hover {
     color: #fff;
     border-bottom: 1px solid #ffe05a;
 }
@@ -398,6 +404,7 @@ footer a:hover {
     background-color: #0c5395;
     color: #ccc;
     padding: 20px;
+    text-align: center;
 }
 
 .socials {
