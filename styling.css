@@ -85,6 +85,7 @@
   
 .nav-logo {
     background-color: #073763;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 /** Title/What I do **/
@@ -92,9 +93,10 @@
 .top-section {
     text-align: center;
     line-height: 50px;
-    padding: 100px;
     background-color: #fff;
     background-image: url("pattern.png");
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .top-section h1 {
@@ -111,6 +113,7 @@
     height: 200px;
     background-color: #073763;
     border-radius: 100px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
 }
 
 /** Introduction/About **/
@@ -241,8 +244,8 @@
 }
 
 .work-card:hover h2 {
+    background-color: rgba(7, 55, 99, 0.9);
     visibility: visible;
-    background-color: #073763;
 }
 
 .work-card a {
@@ -256,37 +259,18 @@
     color: #fff;
 }
 
-.launch {
-    background-color: #073763;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    width: 5em;
-    margin: auto;
-    margin-top: 10px;
-}
-
-.launch a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.launch:hover {
-    background-color: #0c5395;
-}
-
 .all-work {
     border: 2px solid #0c5395;
-    margin: 10px auto 20px auto;
+    margin: 10px;
     color: #0c5395;
-    width: 7em;
     font-size: 20px;
+    padding: 10px;
 }
 
 .all-work a {
     text-decoration: none;
     padding: 20px;
+    border-bottom: none;
 }
 
 .preview {
