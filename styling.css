@@ -93,6 +93,8 @@
     text-align: center;
     line-height: 50px;
     padding: 100px;
+    background-color: #fff;
+    background-image: url("pattern.png");
 }
 
 .top-section h1 {
