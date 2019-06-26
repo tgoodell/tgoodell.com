@@ -1,0 +1,107 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+html {
+  background-color: #f7f7ff;
+}
+
+.navbar {
+  background-color: #073763;
+  color: #f7f7ff;
+  padding: 1%;
+}
+
+.navitem {
+  padding: 1%;
+  font-size: 20px;
+}
+
+.navitem:hover {
+  background-color: #062e52;
+}
+
+.footer {
+  background-color: #073763;
+  color: #f7f7ff;
+  padding: 1%;
+  text-align: center;
+}
+
+.banner {
+  height: 50%;
+  width: 100%;
+  display:block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:url(images/stars2.jpeg)
+}
+
+.mugshot {
+  border-radius: 50%;
+  border: 5px solid #f7f7ff;
+  height: 60%;
+  text-align: center;
+  margin-top: 12%;
+}
+
+.card {
+  margin: auto;
+  background-color: #ffffff;
+  padding: 1%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  line-height: 35px;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: auto;
+    margin: 10px;
+  }
+  .card h1 {
+    font-size: 30px;
+  }
+  .card p {
+    font-size: 20px
+  }
+  .navbar {
+    padding: 5%;
+  }
+  .navitem {
+    padding: 2%;
+  }
+  .footer {
+    padding: 5%;
+  }
+}
+
+.card h1 {
+  font-size: 35px;
+}
+
+.card p {
+  font-size: 25px;
+}
+
+.card a {
+  border-bottom: 3px solid #023b83;
+}
+
+.card a:hover {
+  color: #172721;
+  border-bottom: 3px solid #226cc4;
+}
+
+.mainbody {
+  margin: 1%;
+}
