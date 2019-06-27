@@ -463,7 +463,7 @@ a {
 }
 
 @media (max-width: 1063px) {
-    #work-card-row {
+    #work-cards {
         flex-direction: column;
         padding: 0;
     }
