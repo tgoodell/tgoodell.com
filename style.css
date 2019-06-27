@@ -17,6 +17,11 @@ Table of Contents
 
 /** General CSS **/
 
+* {
+    margin: 0;
+    font-family: 'B612', sans-serif;
+}
+
 a {
     transition: 0.5s;
 }
