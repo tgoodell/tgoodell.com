@@ -249,7 +249,7 @@ a {
     margin-top: 70px;
 }
 
-#w-cards {
+#work-card-row {
     display: flex;
     flex-direction: row;
 }
