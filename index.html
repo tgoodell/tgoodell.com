@@ -18,21 +18,7 @@
         <meta name="keywords" content="Tristan Goodell, Tristan, Goodell, tgoodell, Front-end Developer, Web Designer, HTML, CSS, Javascript, Wordpress, Ghost, Apache Virtual Hosts, xkill, Email">
         <meta name="google-site-verification" content="gm1weg3SJV4RB03qD4t0IJwmIRamTXxy-V4We-XaFfc" />
         <meta name="msvalidate.01" content="0195410DF78E3630ACAFD6B61C045427" />
-        <!-- Matomo -->
-        <script type="text/javascript">
-            var _paq = window._paq || [];
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-            var u="https://analytics.sugaryweb.com/";
-            _paq.push(['setTrackerUrl', u+'matomo.php']);
-            _paq.push(['setSiteId', '7']);
-            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-        <!-- End Matomo Code -->
+        
         <link rel="shortcut icon" href="favicons/favicon.ico">
         <link rel="icon" sizes="16x16 32x32 64x64" href="favicons/favicon.ico">
         <link rel="icon" type="image/png" sizes="196x196" href="favicons/favicon-192.png">
@@ -61,33 +47,39 @@
                 document.getElementById("myNav").style.width = "0%";
             }
         </script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <nav>
-            <div id="myNav" class="overlay">
+            <div id="navbar" class="overlay">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <div class="overlay-content">
-                    <a href="https://tngoodell.com">Home</a>
+                    <a href="https://tgoodell.com">Home</a>
                     <a href="https://blog.tgoodell.com">Blog</a>
-                    <a href="https://blog.tgoodell.com/tags/">Tags</a>
-                    <a href="https://blog.tgoodell.com/work/">My Work</a>
-                    <a href="https://blog.tgoodell.com/contact/">Get In Touch</a>
-                    <a href="https://github.com/tgoodell">Github</a>
+                    <a href="https://blog.tgoodell.com/contact/">Contact</a>
                 </div>
             </div>
             <div class="nav-logo">
                 <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
-                <span>
-                    <a href="https://tgoodell.com">
-                        <img src="logo.svg" alt=" Tristan Goodell Logo" class="top-logo"></img>
-                    </a>
-                </span>
+                <div class="desktop-nav">
+                    <a href="https://tgoodell.com">Home</a>
+                    <a href="https://blog.tgoodell.com">Blog</a>
+                    <a href="https://blog.tgoodell.com/contact/">Contact</a>
+                </div>
+                <div class="nav-logo">
+                    <span class="menu-button" onclick="openNav()">&#9776; Menu</span>
+                    <span>
+                        <a href="https://tgoodell.com">
+                            <img src="logo.svg" alt=" Tristan Goodell Logo" class="top-logo"></img>
+                        </a>
+                    </span>
+                </div>
             </div>
         </nav>
         <section class="top-section">
-            <h1>Front-end Developer & Web Designer</h1>
-            <p>I build responsive, beautiful websites!</p>
-            <img src="tg.png" id="mugshot" alt="Tristan Goodell">
+            <h1>Tristan Goodell</h1>
+            <p>Computer Science Student & Enthusiast</p>
+            <img src="images/tg.svg" id="mugshot" alt="Tristan Goodell">
         </section>
         <section id="intro">
             <div class="intro-text">
@@ -95,17 +87,14 @@
                 <div class="separator">
                     <span></span>
                 </div>
-                <p>I am a front-end developer and web designer based in the United States. I was first introduced to CSS3 while managing several subreddits 
-                    prior to Reddit's redesign. I also created banners, logos, and other graphics to enhance the design of the subreddits under my jurisdiction. 
-                    This later morphed into building websites from the group up by using front-end technologies, such as HTML5 and CSS3. At first, these sites were 
-                    solely for local intranets. Later, I began building websites for the greater web.
+                <p>I am a student at the <a href="https://asmsa.org/">Arkansas School for Math, Sciences, and the Arts</a>. I enjoy taking Computer Sciences courses and pursuing projects outside of school that interest me. I am a member of the Swing Dance club, the Mathematical Society, Computer Science Club, and National Honor Society.
                 </p>
                 <br>
-                <p>Today, I build and design websites using a variety of languages, technologies, and techniques (a few are shown below). I have constructed 
-                    websites for a variety of people and institutions including, but not limited to, friends, school clubs, and myself.
+                <p>At ASMSA, I have competed in the <a href="https://www.venturecenter.co/jolt">Jolt Cybersecurity Challenge</a>, the <a href="http://dese.ade.arkansas.gov/divisions/special-projects/arkansas-computer-science-initiative/contest-and-grant-opportunities/governors-all-region-and-all-state-coding-competition">Governor's All-Region Coding Competition</a>, the <a href="https://www.mtfchallenge.org/">Modelling the Future Challenge</a>, and the <a href="https://purplecomet.org/">Purple Comet Math Meet</a>. 
+                I also attended the <a href="http://www.lrtechfest.com/">2019 Little Rock Tech Fest</a> and was a Gamemaster for the <a href="http://compsci.asmsa.org/hack/">2019 High School Hack</a>.     
                 </p>
                 <br>
-                <p>If you were captivated by what you have seen, feel free to <a href="https://blog.tgoodell.com/contact/">reach out to me</a>.
+                <p>If you would like to learn more about me, please click <a href="https://tgoodell.com/about">here</a>.</p>
             </div>
         </section>
         <section id="skills">
@@ -115,18 +104,22 @@
                     <span></span>
                 </div>
                 <h2>Languages</h2>
-                <p>HTML5</p>
-                <p>CSS3</p>
-                <p>Javascript</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>PHP</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ul>
                 <br>
                 <h2>I Use</h2>
-                <p>Apache Virtual Hosts</p>
-                <p>Nginx</p>
-                <p>Cloudflare</p>
-                <p>Github</p>
-                <p>DigitalOcean</p>
-                <p>Let's Encrypt</p>
-                <p>Visual Studio Code</p>
+                <ul>
+                    <li>Apache</li>
+                    <li>Cloudflare</li>
+                    <li>Github</li>
+                    <li>DigitalOcean</li>
+                    <li>Let's Encrypt</li>
+                    <li>Visual Studio Code</li>
+                </ul>
             </div>
             <div class="skill-card" style="margin: 0;margin-top:40px;margin-bottom: 40px;">
                 <h1>Web Design</h1>
@@ -134,16 +127,22 @@
                     <span></span>
                 </div>
                 <h2>CMS</h2>
-                <p>Wordpress</p>
-                <p>Ghost</p>
-                <br>
+                <ul>
+                    <li>Wordpress</li>
+                    <li>Ghost</li>
+                    <li>October CMS</li>
+                    <li>WriteFreely</li>
+                </ul>
                 <br>
                 <h2>I Make</h2>
                 <p>Logos</p>
-                <p>Banners</p>
-                <p>Blog Thumbnails</p>
-                <p>Color Schemes</p>
-                <p>& More</p>
+                <ul>
+                    <li>Logos</li>
+                    <li>Banners</li>
+                    <li>Blog Thumbnails</li>
+                    <li>Color Schemes</li>
+                    <li>& More</li>
+                </ul>
             </div>
         </section>
         <section id="certs">
@@ -157,11 +156,10 @@
                     <img src="images/marketing.jpg" alt="The Google Fundamentals of Digital Marketing Certification">
                     <p><b>Skills:</b> How to Take a Business Online, SEO, Advertising, Social Media & Content Marketing, Analytics, & E-commerce</p>
                 </div>
-                <div class="cert-card">
-                    <h2>Responsive Web Design Developer Certification</h2>
-                    <img src="images/responsive.jpg" alt="Responsive Web Design Certification">
-                    <p><b>Skills:</b> HTML5, CSS3, Visual Design, Accessibility, Responsive Web, CSS Flexbox, & CSS Grid</p>
-                </div>
+            <div class="cert-card">
+                <h2>Responsive Web Design Developer Certification</h2>
+                <img src="images/reweb-cert.svg" alt="Responsive Web Design Certification">
+                <p><b>Skills:</b> HTML5, CSS3, Visual Design, Accessibility, Responsive Web, CSS Flexbox, & CSS Grid</p>
             </div>
         </section>
         <section id="work">
@@ -169,43 +167,45 @@
             <div class="separator">
                 <span></span>
             </div>
-            <div id="work-cards">
-                <div class="work-card" style="background-image: url(images/tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
-                    <h2><a href="https://tgoodell.com">tgoodell.com</a></h2>
+                <div id="work-cards">
+                    <div class="work-card" style="background-image: url(images/tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                        <h2><a href="https://tgoodell.com">tgoodell.com</a></h2>
+                    </div>
+                    <div class="work-card" style="background-image: url(images/blog.tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                        <h2><a href="https://blog.tgoodell.com">blog.tgoodell.com</a></h2>
+                    </div>
+                    <div class="work-card" style="background-image: url(images/locs.tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                        <h2><a href="https://locs.tgoodell.com">locs.tgoodell.com</a></h2>
+                    </div>
                 </div>
-                <div class="work-card" style="background-image: url(images/blog.tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
-                    <h2><a href="https://blog.tgoodell.com">blog.tgoodell.com</a></h2>
+                <div id="work-cards">
+                    <div class="work-card" style="background-image: url(images/analytics.sugaryweb.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                        <h2><a href="https://analytics.sugaryweb.com">analytics.sugaryweb.com</a></h2>
+                    </div>
+                    <div class="work-card" style="background-image: url(images/tmail.com.de.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                        <h2><a href="https://tmail.com.de">tmail.com.de</a></h2>
+                    </div>
+                    <div class="work-card" style="background-image: url(images/maumelletsa.org.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
+                        <h2><a href="maumelletsa.org">maumelletsa.org</a></h2>
+                    </div>
                 </div>
-                <div class="work-card" style="background-image: url(images/locs.tgoodell.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
-                    <h2><a href="https://locs.tgoodell.com">locs.tgoodell.com</a></h2>
-                </div>
-            </div>
-            <div id="work-cards">
-                <div class="work-card" style="background-image: url(images/analytics.sugaryweb.com.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
-                    <h2><a href="https://analytics.sugaryweb.com">analytics.sugaryweb.com</a></h2>
-                </div>
-                <div class="work-card" style="background-image: url(images/tmail.com.de.png);background-position: center;background-repeat: no-repeat;background-size: cover;">
-                    <h2><a href="https://tmail.com.de">tmail.com.de</a></h2>
-                </div>
-                <div class="work-card" style="background-image: url(images/maumelletsa.org.jpg);background-position: center;background-repeat: no-repeat;background-size: cover;">
-                    <h2><a href="maumelletsa.org">maumelletsa.org</a></h2>
-                </div>
-            </div>
-            <div style="margin-top: 40px;margin-bottom: 40px;"><a href="https://blog.tgoodell.com/work/" class="all-work" >All Work</a></div>
-        </section>
-        <section>
-            <div class="subscribe" id="subscribe">
-                <h1 style="color: #fff;">Subscribe!</h1>
+                <div style="margin-top: 40px;margin-bottom: 40px;"><a href="https://blog.tgoodell.com/work/" class="all-work" >All Work</a></div>
+            </section>
+        <section class="subscribe-background">
+            <div id="subscribe">
+                <h1>Subscribe!</h1>
                 <div class="separator">
                     <span></span>
                 </div>
                 <p>Stay in touch and get updates on my latest projects!</p>
-                <form method="post" action="https://blog.tgoodell.com/subscribe/" class="gh-signin">
+                <!-- <form method="post" action="https://blog.tgoodell.com/subscribe/" class="gh-signin"> -->
+                <form action="https://tgoodell.us19.list-manage.com/subscribe/post?u=da44fcaadfa88324f816c514c&amp;id=484e82bb46" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location" value="https://blog.tgoodell.com/subscribe/"><input class="referrer" type="hidden" name="referrer" value="https://blog.tgoodell.com/">
                     <div style="position:flex;flex-direction:row;">
                         <div class="form-group">
-                            <input class="gh-input" type="email" name="email" placeholder="Your email address">
-                            <button class="" type="submit"><span>Subscribe</span></button>
+                            <input type="email" value="" name="EMAIL" class="gh-input" placeholder="Your email address">
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_da44fcaadfa88324f816c514c_484e82bb46" tabindex="-1" value=""></div>
+                            <button class="" type="submit" value="Subscribe" name="subscribe"><span>Subscribe</span></button>
                         </div>
                     </div>
                 </form>
@@ -216,14 +216,14 @@
                 <h2>Find me here:</h2>
                 <br>
                 <span class="socials" style="margin: auto;">
-                    <a href="https://twitter.com/TristanGoodell"><img src="images/twitter.svg" class="social-icon" alt="twitter"></a>
-                    <a href="https://github.com/tgoodell"><img src="images/github.svg" class="social-icon" alt="github"></a>
-                    <a href="mailto:contact@tgoodell.com"><img src="images/email.svg" class="social-icon" alt="email"></a>
+                    <a href="https://github.com/tgoodell"><i class="fa fa-github" style="font-size: 30px;" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/tgoodell_official/"><i class="fa fa-instagram" style="font-size: 30px;" aria-hidden="true"></i></a>
+                    <a href="mailto:contact@tgoodell.com"><i class="fa fa-envelope-o" style="font-size: 30px;" aria-hidden="true"></i></a>
+                    <a href="https://blog.tgoodell.com/feed/"><i class="fa fa-rss" style="font-size: 30px;" aria-hidden="true"></i></a>
                 </span>
             </div>
-            </div>
-            <div class="primary-footer">
-                <p>&copy 2019 <a href="https://tgoodell.com">Tristan Goodell</a></p>
+            <div class="copy-footer">
+                <p>Copyright &copy; 2018 - 2020 <a href="https://tgoodell.com">Tristan Goodell</a></p>
             </div>
         </footer>
     </body>
