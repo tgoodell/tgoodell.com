@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu&display=swap');
+
+:root { 
+    --primary-color: rgb(15, 157, 88); 
+    --secondary-color: rgb(255, 255, 255); 
+} 
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oxygen', sans-serif;
+}
+
+p, li {
+    font-family: 'Ubuntu', sans-serif;
+}
