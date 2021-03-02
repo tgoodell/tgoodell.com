@@ -1,14 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu&display=swap');
 
 :root { 
-    --primary-color: rgb(15, 157, 88); 
-    --secondary-color: rgb(255, 255, 255); 
+    --imperial-red: #ff0035; 
+    --imperial-red-darker: #e0002d;
+    --roman-silver: #8b939c; 
+    --independence-one: #59546c;
+    --independence-one-darker: #4b475c;
+    --independence-two: #38405f;
+    --rich-black: #0e131f;
+    --floral-white: #FCF8ED;
 } 
+
+* {
+    color: var(--rich-black);
+    line-height: 2em;
+    margin: 0;
+}
+
+body {
+    background-color: var(--floral-white);
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Oxygen', sans-serif;
 }
 
-p, li {
+p, li, a {
     font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    transition: 0.5s;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+.navbar {
+    padding: 2em;
+    margin: 0;
+    text-align: center;
+    line-height: 1em;
+    background-color: var(--independence-one);
+    color: var(--floral-white);
+}
+
+.navbar a {
+    margin: 0;
+    padding: 2em;
+    line-height: 1em;
+}
+
+.navbar a:hover {
+    background-color: var(--independence-one-darker)
+}
+
+.cool-footer {
+    background-color: var(--independence-one);
+    text-align: center;
+    padding: 1em;
+}
+
+.cool-footer p {
+    color: var(--floral-white);
+}
+
+.cool-header {
+    text-align: center;
+    line-height: 50px;
+    background-color: var(--floral-white);
+    background-image: url("images/whangaehu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 5px solid var(--roman-silver)
+}
+
+.cool-intro-card {
+    border: 1px solid var(--roman-silver);
+    padding: 1em;
+    margin: -3em auto 1em auto;
+    width: 50%;
+    background-color: var(--floral-white);
+    border-radius: 3px;
+}
+
+.cool-intro-card a {
+    color: var(--independence-one);
+    text-decoration: underline;
+}
+
+.cool-intro-card a:hover {
+    color: var(--imperial-red-darker);
+}
+
+.cool-intro-card h1 {
+    text-align: center;
+}
+
+.cool-pages {
+    padding: 2em;
+    background-color: var(--independence-two);
+}
+
+.cool-pages h1 {
+    color: var(--floral-white);
+    text-align: center;
+}
+
+th {
+    padding: 1em;
+}
+
+td, th {
+    color: var(--floral-white);
+    border-bottom: 2px solid var(--independence-one);
+}
+
+th, td {
+    padding: 1em;
 }
