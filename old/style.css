@@ -1,0 +1,692 @@
+/** General CSS **/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+/* @font-face {
+    font-family: 'B612';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('B612 Regular'), local('B612-Regular'), url(https://fonts.gstatic.com/s/b612/v3/3JnySDDxiSz36j6yGQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} */
+  
+* {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    font-display: swap;
+}
+  
+a {
+    transition: 0.5s;
+    text-decoration: none;
+    color: inherit;
+}
+
+h3, p {
+    line-height: 2;
+}
+
+/** Navigation Bar **/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(7,55,99, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+  
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+  
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ccc;
+    display: block;
+    transition: 0.3s;
+    line-height: 30px;
+}
+  
+.overlay a:hover, .overlay a:focus {
+    color: #fff;
+}
+  
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+  
+.menu-button {
+    font-size:20px;
+    cursor:pointer;
+    float: right;
+    margin: 20px;
+    border-radius: 0px;
+    border: 1px solid #fff;
+    color: #ccc;
+    padding: 10px;
+    line-height: 20px;
+    transition: 0.5s;
+    display: none;
+}
+  
+.menu-button:hover {
+    color: #073763;
+    border-color: #ffffff;
+    background-color: #fff;
+}
+  
+.top-logo {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+  
+.nav-logo {
+    background-color: #073763;
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.desktop-nav {
+    float: right;
+    font-size:20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.desktop-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0px 20px 0px;
+    padding: 30px 20px;
+}
+
+.desktop-nav a:hover {
+    background-color: #041F39;
+}
+
+@media (max-width: 700px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: initial;
+    }
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/** Title/What I do **/
+
+.top-section {
+    text-align: center;
+    line-height: 50px;
+    background-color: #fff;
+    background-image: url("images/whangaehu.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.top-section h1 {
+    font-size: 30px;
+}
+
+.top-section p {
+    font-size: 25px;
+    font-weight: 10;
+}
+
+#mugshot {
+    width: 200px;
+    height: 200px;
+    background-image: url("images/tg-bg.svg");
+    border-radius: 100px;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+/** Introduction/About **/
+
+#intro {
+    background-color: #073763;
+    color: #fff;
+    padding: 100px;
+    padding-bottom: 200px;
+    line-height: 35px;
+    border-top: 5px solid #ffdd4a;
+}
+
+#intro h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.intro-text {
+    width: 50%;
+    margin: auto;
+}
+
+.intro-text p a {
+    text-decoration: underline;
+    color: #ffdd4a;
+}
+
+.intro-text p a:hover {
+    color: #E0B700;
+}
+
+/** Skills **/
+
+#skills {
+    background-color: #fff;
+    width: 60%;
+    margin: auto;
+    margin-top: -100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.skill-card {
+    width: 50%;
+    text-align: center;
+}
+
+.skill-card h2 {
+    color: #073763;
+    font-size: 20px;
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/** Certs **/
+
+#certs {
+    width: 60%;
+    margin: auto;
+    padding: 100px;
+    line-height: 40px;
+    margin-top: 70px;
+}
+
+#certs h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+#cert-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.cert-card {
+    width: 50%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+}
+
+.cert-card h2 {
+    margin-bottom: 10px;
+}
+
+.cert-card img {
+    width: 100%;
+    align-self: vertical;
+}
+
+.cert-card p {
+    line-height: 30px;
+}
+
+.cert-card b {
+    color: #073763;
+}
+
+/** Work **/
+
+#work {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#work-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.work-card {
+    margin: 20px;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2),0 1.5px 5px 0 rgba(0,0,0,0.19);
+    width: 33%;
+    height: 200px;
+    display: inline-block;
+    padding: 20px;
+    line-height: 20px;
+}
+
+.work-card h3 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.work-card:hover {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.work-card a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid #e8c944;
+}
+
+.work-card a:hover {
+    border-bottom: 2px solid #ffdd4a;
+    color: #000;
+}
+
+.all-work {
+    border: 2px solid #0c5395;
+    margin: 10px;
+    color: #0c5395;
+    font-size: 20px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.all-work:hover {
+    background-color: #0c5395;
+    color: #fff;
+}
+
+.all-work a {
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: none;
+}
+
+/** Subscribe! **/
+
+.subscribe-background {
+    background-image: url("images/waiau.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    border-top: 5px solid #ffdd4a;
+}
+
+#subscribe {
+    background-color: #fff;
+    padding: 2%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    line-height: 35px;
+    max-width: 40em;
+    margin: auto;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+#subscribe p, #subscribe h1 {
+    color: #000;
+}
+
+.gh-input textarea {
+    max-width: 20em;
+    display: inline-block;
+}
+
+.separator {
+    background-color: #cccccc;
+    width: 180px;
+    height: 1px;
+    margin: 15px auto 21px;
+}
+
+.separator span {
+    background-color: #2b59c3;
+    width: 30px;
+    height: 4px;
+    margin: 0px auto;
+    display: block;
+    position: relative;
+    bottom: 2px;
+}
+
+/** Footer **/
+.copy-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #073763;
+    color: #ccc;
+}
+
+.copy-footer a {
+    text-decoration: none;
+    color: #ccc;
+    border-bottom: 1px solid #ffdd4a;
+}
+
+.copy-footer a:hover {
+    color: #fff;
+    border-bottom: 1px solid #ffe05a;
+}
+
+.secondary-footer {
+    background-color: #302949;
+    color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.socials {
+    margin: auto;
+    text-align: auto;
+}
+
+.social-icon {
+    width: 30px;
+    font-size: 22px;
+    border-radius: 4px;
+    border: 1px solid #0c5395;
+}
+
+.social-icon:hover {
+    border: 1px solid #ffdd4a;
+}
+
+/** Media Queries **/
+
+@media (max-width: 1815px) {
+    #work {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1669px) {
+    #certs {
+        text-align: center;
+        width: 80%;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1493px) {
+    #work {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1285px) {
+    #work {
+        width: 95%;
+    }
+}
+
+@media (max-width: 1209px) {
+    .intro-text {
+        width: auto;
+    }
+}
+
+@media (max-width: 1103px) {
+    #work {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1063px) {
+    #work-cards {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .work-card {
+        width: 80%;
+        height: 15em;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 973px) {
+    #skills {
+        margin: 10px;
+        margin-bottom: 20px;
+        margin-top: -100px;
+        width: auto;
+    }
+
+    #certs {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    #cert-cards {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .cert-card {
+        width: auto;
+    }
+}
+
+@media (max-width: 661px) {
+    #skills {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        margin: 30px;
+        width: 100%;
+        border: none;
+    }
+}
+
+@media (max-width: 567px) {
+    #intro {
+        padding: 100px 50px 100px 50px;
+    }
+
+    #skills {
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 465px) {
+    #intro {
+        padding: 40px 20px 40px 20px;
+    }
+    #skills {
+        margin-top: -20px;
+    }
+}
+
+@media (max-width: 455px) {
+    .gh-input {
+        width: auto;
+    }
+}
+
+@media (max-width: 300px) {
+    .intro-text {
+        width: auto;
+    }
+}
+
+/** Pages **/
+
+.page-header {
+    background-image: url("images/doubs.svg");
+    padding: 10em 5em;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #073763;
+    border-bottom: 5px solid#ffdd4a;
+}
+
+.page-header h1 {
+    font-size: 50px;
+}
+
+.page-header p {
+    font-size: 20px;
+}
+
+.cool-card {
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 3px 10px 0 rgba(0,0,0,0.19);
+    padding: 3em;
+    width: 50%;
+    margin: -3em auto 4em auto;
+    background-color: #fff;
+}
+
+.cool-card p, .cool-card ul {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.cool-card h1 {
+    text-align: center;
+}
+
+.cool-card h2 {
+    line-height: 2;
+}
+
+.cool-card a {
+    color: #2b59c3;
+    text-decoration: underline;
+}
+
+.cool-card a:hover {
+    color: #073763;
+}
+
+@media (max-width: 1063px) {
+    .cool-card {
+        width: 70%;
+        padding: 2em;
+    }
+}
+
+@media (max-width: 700px) {
+    .cool-card {
+        width: auto;
+        margin: -3em 1em 4em 1em;
+        padding: 1em;
+    }
+}
+
+/* #contact-form textarea, #contact-form select, #contact-form input[type] {
+    color: #4a4a4a;
+    padding: 6px 10px;
+    /* The 6px vertically centers text on FF, ignored by Webkit 
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+#contact-form textarea:focus, #contact-form select:focus, #contact-form input[type]:focus {
+    border: 1px solid #2c8898;
+    outline: 0; 
+}
+
+#contact-form input, #contact-form #contact-form textarea {
+    border: 1px solid #4a4a4a; 
+}
+
+#contact-form #contact-form input:focus, #contact-form textarea:focus {
+    border: 1px solid #2c8898;
+}
+  
+#contact-form textarea {
+    width: 100%; 
+} */
+
+textarea, input[type], select {
+    padding: 10px 20px 10px 20px;
+    background-color: #fff;
+    margin: 5px;
+    color: #000;
+    border: 1px solid #2b59c3;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+textarea:focus, input[type]:focus, select:focus {
+    border: 1px solid #0b5394;
+    border-radius: 5px;
+    outline: 0;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    background-color: #2b59c3;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    border: 1px solid #2b59c3;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #0b5394;
+    border: 1px solid #0b5394;
+}
