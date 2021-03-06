@@ -4,19 +4,24 @@ import shutil
 
 def toMarkdown(line):
   if "@ Title: " in line:
-    return "<title>Tristan Goodell &mdash; " + line[9:] + "</title>"
+    return "Title: " + line[9:]
   elif "@ Description: " in line:
-    return "<meta name='description' content=" + line[15:] + "'>"
+    return "Description: " + line[15:]
   elif "@ Author: " in line:
-    return "<meta name='author' content='" + line[10:] + "'>"
+    return "Author: " + line[10:]
   elif "@ Keywords: " in line:
-    return "<meta name='keywords' content='" + line[12:] + "'>"
+    return "Keywords: " + line[12:]
   elif "@ Date: " in line:
-    return line[8:]
+    return "Date: " + line[8:]
   else:
     return markdown.markdown(line)
 
 pages=[]
+titleList=[]
+descriptionList=[]
+authorList=[]
+keywordList=[]
+dateList=[]
 pageContent=[]
 
 folder_path = 'md-pages/'
@@ -29,7 +34,18 @@ for filename in glob.glob(os.path.join(folder_path, '*.md')):
     newPageContent=""
 
     for line in text.split("\n"):
-      newPageContent+=toMarkdown(line)
+      mline=toMarkdown(line)
+      if mline[:7]=="Title: ":
+        titleList.append(mline[7:])
+      elif mline[:13]=="Description: ":
+        descriptionList.append(mline[13:])
+      elif mline[:8]=="Author: ":
+        authorList.append(mline[8:])
+      elif mline[:10]=="Keywords: ":
+        keywordList.append(mline[10:])
+      elif mline[:6]=="Date: ":
+        dateList.append(mline[6:])
+      newPageContent+=toMarkdown(line)+"\n"
 
     pageContent.append(newPageContent)
 
@@ -41,10 +57,23 @@ os.mkdir("p")
 
 n=0
 for pageTitle in pages:
-  pageTitle=pageTitle.replace(" ","-").lower
-  os.mkdir("p/" + str(pageTitle))
+  pageTitle=str(pageTitle).replace(" ","-").lower()
 
-  htmlFile=open("p/" + pageTitle + "/index.html",w)
-  htmlFile.write(pageContent[n])
+  htmlFile=open("p/" + str(pageTitle) + ".html","w")
+  with open("partials/standard.html", 'r') as f:
+    fileContents = f.read()
+  with open("partials/nav.html", 'r') as f:
+    fileContents=fileContents.replace("{{{nav}}}",f.read())
+  with open("partials/footer.html", 'r') as f:
+    fileContents=fileContents.replace("{{{footer}}}",f.read())
+
+  fileContents=fileContents.replace("{{{content}}}",pageContent[n])
+  fileContents=fileContents.replace("{{{title}}}",titleList[n])
+  fileContents=fileContents.replace("{{{author}}}",authorList[n])
+  fileContents=fileContents.replace("{{{keywords}}}",keywordList[n])
+  fileContents=fileContents.replace("{{{description}}}",descriptionList[n])
+
+  htmlFile.write(fileContents)
 
   n+=1
+

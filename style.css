@@ -9,6 +9,12 @@
     --independence-two: #38405f;
     --rich-black: #0e131f;
     --floral-white: #FCF8ED;
+    --titanium-yellow: #F4E409;
+    --orange-yellow: #eeba0b;
+    --outer-space-crayola: #1f363d;
+    --outer-space-crayola-darker: #153439;
+    --teal-blue: #40798C;
+    --ruby-red: #a31621;
 } 
 
 * {
@@ -41,7 +47,7 @@ a {
     margin: 0;
     text-align: center;
     line-height: 1em;
-    background-color: var(--independence-one);
+    background-color: var(--outer-space-crayola);
     color: var(--floral-white);
 }
 
@@ -52,11 +58,11 @@ a {
 }
 
 .navbar a:hover {
-    background-color: var(--independence-one-darker)
+    background-color: var(--outer-space-crayola-darker)
 }
 
 .cool-footer {
-    background-color: var(--independence-one);
+    background-color: var(--outer-space-crayola);
     text-align: center;
     padding: 1em;
 }
@@ -74,11 +80,11 @@ a {
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
-    border-bottom: 5px solid var(--roman-silver)
+    border-bottom: 5px solid var(--orange-yellow)
 }
 
 .cool-intro-card {
-    border: 1px solid var(--roman-silver);
+    border: 1px solid var(--orange-yellow);
     padding: 1em;
     margin: -3em auto 1em auto;
     width: 50%;
@@ -87,12 +93,12 @@ a {
 }
 
 .cool-intro-card a {
-    color: var(--independence-one);
+    color: var(--outer-space-crayola);
     text-decoration: underline;
 }
 
 .cool-intro-card a:hover {
-    color: var(--imperial-red-darker);
+    color: var(--orange-yellow);
 }
 
 .cool-intro-card h1 {
@@ -101,7 +107,7 @@ a {
 
 .cool-pages {
     padding: 2em;
-    background-color: var(--independence-two);
+    background-color: var(--teal-blue);
 }
 
 .cool-pages h1 {
@@ -115,7 +121,7 @@ th {
 
 td, th {
     color: var(--floral-white);
-    border-bottom: 2px solid var(--independence-one);
+    border-bottom: 2px solid var(--outer-space-crayola);
 }
 
 th, td {
